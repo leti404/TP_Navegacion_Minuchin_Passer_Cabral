@@ -5,12 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 
-import * as React from 'react';
-import { Text, View, TextInput, Button, Image, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Ionicons } from '@expo/vector-icons';
 
 // ------------ Stack A Screens ------------
 function HomeScreen({ navigation }) {
@@ -61,7 +55,6 @@ function ProfileScreen() {
   return (
     <View style={styles.stackC}>
       <Text style={styles.text}>Perfil de Usuario</Text>
-      <Image source={{ uri: 'https://placekitten.com/200/200' }} style={styles.image} />
     </View>
   );
 }
@@ -88,7 +81,6 @@ function ContactScreen() {
   return (
     <View style={styles.stackD}>
       <Text style={styles.text}>Contáctanos</Text>
-      <Image source={{ uri: 'https://placekitten.com/300/200' }} style={styles.image} />
     </View>
   );
 }
